@@ -42,3 +42,6 @@ Sensors :
 
 - https://github.com/meltoner/NEM_NANO/tree/main/media
 
+## PCB board 
+
+- https://github.com/meltoner/NEM_NANO/tree/main/pcb_and_box
