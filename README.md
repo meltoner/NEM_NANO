@@ -34,7 +34,7 @@ Sensors :
 - Receiver : [flysky FS-1A10B](https://www.flysky-cn.com/ia10b-canshu)
 - Arduino nano
 
-- LED
+- LED and resistance
 - 3 Pin Female connectors, ribbon cable, conectors, board, box, battery, etc
 
 ## Connectivity
