@@ -13,8 +13,7 @@ The component, derives and transmits the distance from home, the external voltag
 - Software utilities a GPS, remote control on an arduino nano
 - Sensors and actuators are all in classes
 - Implements five tasks execution frequencies
-- Auto derives home after 10 seconds since first lock, and after seeing at least 6 satellites
-- Derives distance and degrees from a target gps LAT LOT
+- Auto derives home after 10 seconds since first gps lock and after locking with at least 6 satellites
 - Transmits distance from home
 - Transmits speed in 10cm/secon
 - Transmits External Voltage,
