@@ -1,6 +1,5 @@
 // @author : Konstantinos Papageorgiou - 2022 - kp at rei.gr
 // @repo: https://github.com/meltoner/NEM_NANO
-//
 //  # NEM NANO 
 //  
 //  NEM GPS FLYSKY DISTANCE, Voltage, speed sensor on Arduino nano
@@ -13,17 +12,16 @@
 //  
 //  ## Software Features :
 //  
-//  - Software utilities a GPS, remote control on an arduino nano
-//  - Sensors and actuators are all in classes
-//  - Implements five tasks execution frequencies
-//  - Auto derives home after 10 seconds since first lock, and after seeing at least 6 satellites
-//  - Derives distance and degrees from a target gps LAT LOT
-//  - Transmits distance from home
-//  - Transmits speed in 10cm/secon
-//  - Transmits External Voltage,
-//  - Transmits gps coordinates using two numbers per coordinate
-//  - Led indicator low periodicity no gps lock, high periodicity gps lock
-//  - Does not occupy a serial port to transmit telemetry data
+//  - Software utilises a GPS, a voltage sensor and remote control actuator using an arduino nano
+//  - Sensors and actuators are all implemented using classes
+//  - Implements five execution frequencies
+//  - Auto derives home after 10 seconds since the gps lock and after locking with at least 6 satellites
+//  - Transmits meters distance from home
+//  - Transmits speed in 10cm/second
+//  - Transmits the external Voltage
+//  - Transmits the GPS coordinates using two numbers (four digit) per coordinate
+//  - Led indicator having low periodicity when no gps is locked, and with high periodicity when gps is locked.
+//  - Implementation does not occupy a serial port to transmit telemetry information
 //  
 //  ## Hardware
 //  
@@ -37,7 +35,7 @@
 //  - Receiver : [flysky FS-1A10B](https://www.flysky-cn.com/ia10b-canshu)
 //  - Arduino nano
 //  
-//  - LED
+//  - LED and resistance
 //  - 3 Pin Female connectors, ribbon cable, conectors, board, box, battery, etc
 //  
 //  ## Connectivity
@@ -51,7 +49,7 @@
 //  ## PCB board 
 //  
 //  - https://github.com/meltoner/NEM_NANO/tree/main/pcb_and_box
-//  
+
 
 
 #include "Context.h"
