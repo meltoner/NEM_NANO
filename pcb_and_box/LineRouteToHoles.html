@@ -1,0 +1,67 @@
+<head>
+<title>	Gcode line to holes drilling conversion - kp at rei 2022</title>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	textarea{
+		width:100%;
+		min-height: 300px;
+	}
+	.textareas{
+		display: inline-block;
+		width: 49%;
+	}
+	button{
+		width: 100%;
+		min-height: 40px;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Gcode line to holes drilling conversion</h1>
+
+	<p>The following application enhances an existing gcode sequence such that each point in the line correponds to hole to be cut.</p>
+
+	 
+	
+	<br>
+	<div class="textareas">
+		<label>Input G-CODE</label>
+		<textarea id="nc"></textarea>	
+	</div>
+
+	<div class="textareas">
+		<label>Output G-CODE</label>
+		<textarea id="result"></textarea>
+	</div>
+
+	<button>Update</button>
+	<br>
+
+	<p>Konstantinos L. Papageorgiou - 2022</p>
+</body>
+
+<script>
+$=jQuery
+
+//--------------------
+
+var before="\nG1 Z20 F500\n";
+var after="\nG1 Z5 F500\nG1 Z0 F50\nG1 Z10 F100"
+ 
+
+var prepend = "G92 X0 Y0 Z0"
+var append = "G01 X0 Y0 Z0"
+
+//--------------------
+
+$("button").click(function(){
+	var input = $("#nc").val().split("\n")
+	var result = ""
+	for(var i = 0;i<input.length;i++)
+		result += before+input[i]+after
+	result = prepend + result + append
+	$("#result").val(result)
+})
+
+</script>
