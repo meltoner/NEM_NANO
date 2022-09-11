@@ -23,18 +23,13 @@ The component, derives and transmits telemetry information such as distance from
 
 ## Hardware
 
-Sensors :
-
+- Arduino nano
 - Gps : Ublox M8N with compass
 - Voltage sensor 0-25v MH-electronic
-- Receiver : flysky F9-ia10b
-
 - Transmitter : flysky FS-I6X
 - Receiver : [flysky FS-1A10B](https://www.flysky-cn.com/ia10b-canshu)
-- Arduino nano
-
 - LED and resistance
-- 3 Pin Female connectors, ribbon cable, conectors, board, box, battery, etc
+- 3 Pin Female connectors, ribbon cable, conectors, custom board, battery
 
 ## Connectivity
 
