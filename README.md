@@ -10,7 +10,7 @@ The component, derives and transmits telemetry information such as distance from
 
 ## Software Features :
 
-- Software utilises a GPS, a voltage sensor and remote control actuator using an arduino nano
+- Software utilises a GPS, a voltage sensor and remote controller actuator, using an Arduino nano
 - Sensors and actuators are all implemented using classes
 - Implements five execution frequencies
 - Auto derives home after 10 seconds since the gps lock and after locking with at least 6 satellites
