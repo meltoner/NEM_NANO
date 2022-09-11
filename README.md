@@ -2,7 +2,9 @@
 
 NEM GPS FLYSKY DISTANCE, Voltage, speed sensor on Arduino nano
 
-Derives and transmits the distance from home, voltage, gps coordinates, gps sattelite, speed to the flysky remote controller screen using an arduino nano 
+The component, derives and transmits the distance from home, the external voltage, the gps coordinates, the gps satellites, the speed 10cm/sec, to the flysky remote controller (flysky FS-I6X) screen, using an Arduino nano. Built using a custom pcb and software designed, for http://nem.gr  Github repo: https://github.com/meltoner/NEM_NANO
+
+- https://www.youtube.com/watch?v=HKdX1mCnNCI
 
 ## Software Features :
 
