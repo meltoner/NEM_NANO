@@ -1,0 +1,40 @@
+httpswww.google.comsearchclient=firefox-b-d&q=flyplus
+
+https://github.com/qba667/FlySkyI6
+
+https://github.com/qba667/FlySkyI6/releases
+
+https://github.com/qba667/FlySkyI6/releases/download/1.7.6/FlyPlus-1.7.6.zip
+
+
+
+
+Entering the Firmware Update Mode
+
+There are two ways to upload the firmware to FS-i6:
+
+    In the main menu, go to System ⭢ Firmware Update (it is on the second page of the System menu); Select Yes and OK.
+    When something goes wrong, it is also possible to use the following:
+        switch the FS-i6 off
+        push the trims of the left stick rigthwards and downwards, respectively
+        while holding the trims in that position, switch the FS-i6 on
+
+cd C:\Users\meltoner\Documents\Arduino\flysky\FlyPlus-1.7.6
+flysky-updater-win64.exe
+
+
+https://www.nirsoft.net/utils/usb_devices_view.html
+
+https://www.nirsoft.net/utils/usbdeview-x64.zip
+
+
+NOT POSSIBLE TO SELECT A PORT
+
+https://github.com/qba667/FlySkyI6/wiki/Install
+
+https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-2.0-to-ttl-uart-5pin-module-serial-converter-cp2102-stc-prgmr/
+
+Not used by the implementatio but could potentially enable to transmit 
+GPS information using one sensor
+
+need is bypassed by using two sensor value per coordinate
