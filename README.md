@@ -15,9 +15,12 @@ The component, derives and transmits the distance from home, the external voltag
 - Implements five tasks execution frequencies
 - Auto derives home after 10 seconds since first lock, and after seeing at least 6 satellites
 - Derives distance and degrees from a target gps LAT LOT
-- Transmits distance, speed, voltage, gps coordinates using two number per coordinate
+- Transmits distance from home
+- Transmits speed in 10cm/secon
+- Transmits External Voltage,
+- Transmits gps coordinates using two numbers per coordinate
 - Led indicator low periodicity no gps lock, high periodicity gps lock
-- doesn't occupy a serial port to transmit telemetry
+- Does not occupy a serial port to transmit telemetry data
 
 ## Hardware
 
