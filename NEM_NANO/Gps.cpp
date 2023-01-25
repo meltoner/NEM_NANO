@@ -20,34 +20,35 @@ void Gps::apply(){
   while (gpsPort.available() > 0)
     gps.encode(gpsPort.read());   
 
-  //if(gps.location.isUpdated()){
-  //  Serial.print("gps updated");
-  //}
-
   context->satellites = gps.satellites.value();
-  context->speed = gps.speed.mps();
-  
-  context->latlng[0] = gps.location.lat();
-  context->latlng[1] = gps.location.lng();
-  
-  context->isGPSLocked = context->latlng[0] != 0.0;
-  
-  if(context->isGPSLocked){
-    if(context->GPSLockTime == 0){
-      context->GPSLockTime = context->now;
-      context->color = 1;
-      context->intervals[5] = 200;7
-    }else{
-      if((context->now -context->GPSLockTime) > 10000 && context->TARGET_LAT == 37.9584512 && context->satellites > 5){
-        context->TARGET_LAT = context->latlng[0];
-        context->TARGET_LNG = context->latlng[1];
-        context->color = 2;
-      }
-    }
-    context->intervals[5] = 1003;
-    processTarget();
-  }
 
+
+    context->speed = gps.speed.mps();
+    
+    context->latlng[0] = gps.location.lat();
+    context->latlng[1] = gps.location.lng();
+    
+    context->isGPSLocked = context->latlng[0] != 0.0;
+    
+    if(context->isGPSLocked){
+      if(context->GPSLockTime == 0){
+        context->GPSLockTime = context->now;
+        context->color = 1;
+        context->intervals[5] = 200;
+      }else{
+        if(
+            (context->now -context->GPSLockTime) > 10000 &&
+            context->TARGET_LAT == 37.9584512 && 
+            context->satellites > 5
+        ){
+          context->TARGET_LAT = context->latlng[0];
+          context->TARGET_LNG = context->latlng[1];
+          context->color = 2;
+        }
+      }
+      context->intervals[5] = 1003;
+      processTarget();
+    }
 }
 
 void Gps::processTarget(){ 

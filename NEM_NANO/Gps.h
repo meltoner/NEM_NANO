@@ -22,7 +22,7 @@ class Gps{
   private:
     Context *context;
     TinyGPSPlus gps;
-    AltSoftSerial gpsPort; //5 ,13  
+    AltSoftSerial gpsPort; //5 ,13
 };
 
 #endif
